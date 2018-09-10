@@ -21,7 +21,7 @@
                         </ul>
                     </li>
                     <li><a href="#" title=""><img src="{{$adminUrl}}/images/icons/topnav/settings.png" alt="" /><span>Settings</span></a></li>
-                    <li><a href="{{route('auth.auth.logout')}}" title=""><img src="{{$adminUrl}}/images/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
+                    <li><a href="" title=""><img src="{{$adminUrl}}/images/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
                 </ul>
             </div>
             <div class="clear"></div>

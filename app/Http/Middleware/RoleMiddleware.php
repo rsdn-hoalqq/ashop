@@ -17,9 +17,11 @@ class RoleMiddleware
     public function handle($request, Closure $next,$role)
     {
         $arUser=Auth::user(); // lấy user vừa đăng nhập
-        $useranme=$arUser->id_level;
-        if(strpos($role,$useranme)===false){ // tìm kiếm 1 chuổi trong chuổi lớn
-            return redirect('noaccess');
+        if($arUser){
+            $useranme=$arUser->id_level;
+            if(strpos($role,$useranme)===false){ // tìm kiếm 1 chuổi trong chuổi lớn
+                return redirect('noaccess');
+            }
         }
         return $next($request);
     }

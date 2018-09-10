@@ -8,11 +8,13 @@ use Illuminate\Support\Facades\Auth;
 use App\Model\User;
 class AuthController extends Controller
 {
-    public function getLogin(){
+    public function getLogin()
+    {
 
         return view('auth.login');
     }
-    public function postLogin(Request $request){
+    public function postLogin(Request $request)
+    {
         $username=$request->username;
         $password=$request->password;
 
@@ -35,8 +37,9 @@ class AuthController extends Controller
         }
 
     }
-    public function logOut(){
-    Auth::logout();
-    return redirect()->route('auth.auth.login');
-}
+    public function logOut()
+    {
+        Auth::logout();
+        return redirect()->route('auth.auth.login');
+    }
 }

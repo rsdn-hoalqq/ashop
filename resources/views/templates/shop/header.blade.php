@@ -9,7 +9,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="{{$publicUrl}}/images/favicon.png" type="image/png">
+    {{-- <link rel="shortcut icon" href="{{$publicUrl}}/images/favicon.png" type="image/png"> --}}
 
     <!-- Title and description ================================================== -->
     <title>Cameras | NexGeek - Multipurpose Responsive eCommerce HTML Template</title>

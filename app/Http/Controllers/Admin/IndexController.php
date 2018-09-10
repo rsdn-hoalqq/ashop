@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Auth;
 class IndexController extends Controller
 {
     public function index(){
-
         return view('admin.index.index');
     }
 }

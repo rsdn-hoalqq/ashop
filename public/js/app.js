@@ -1788,7 +1788,8 @@ $(document).ready(function () {
             data: "pid",
             className: "center",
             render: function (data) {
-                return '<a   data-id="' + data + '" class=" btn btn-primary ShowModalProducts" data-type="EditPro">Edit</a>  <a class="editor_remove btn btn-warning clickDeleteP" data-id="' + data + '">Delete</a>'
+                return '<a   data-id="' + data + '" class=" btn btn-primary ShowModalProducts" data-type="EditPro">Edit</a> '
+                    + ' <a class="editor_remove btn btn-warning clickDeleteP" data-id="' + data + '">Delete</a>'
             }
         }
         ]
